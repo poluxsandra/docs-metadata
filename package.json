@@ -3,7 +3,6 @@
 	"version": "0.0.0",
 	"description": "AGLS Standard Documentation",
 	"main": "index.js",
-
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/poluxsandra/docs-metadata.git"
@@ -21,15 +20,14 @@
 		"url": "https://github.com/poluxsandra/docs-metadata/issues"
 	},
 	"homepage": "https://github.com/poluxsandra/docs-metadata#readme",
-
 	"devDependencies": {
 		"autoprefixer": "^10.3.1",
 		"postcss": "^8.3.5",
+		"purgecss": "^4.0.3",
+		"postcss-cli": "^8.3.1",
 		"sass": "^1.35.2"
 	},
-	"dependencies": {
-
-	},
+	"dependencies": {},
 	"scripts": {
 		"css-main": "sass main.scss:main.css && postcss main.css --replace --use autoprefixer"
 	}
