@@ -1,20 +1,23 @@
 //Variáveis
 $theme-colors: (
-		"primary":    #008000,
-		"secondary":  #ff0000,
-		"success":    #ffff00,
-		"info":       #4b0082,
-		"warning":    #0000ff,
-		"danger":     #ff8c00,
-		"light":      #fff,
-		"dark":       #000
+	"primary":    #008000,
+	"secondary":  #ff0000,
+	"success":    #ffff00,
+	"info":       #4b0082,
+	"warning":    #0000ff,
+	"danger":     #ff8c00,
+	"light":      #fff,
+	"dark":       #000
 );
 
 $table-border-color: #2e8b57;
+
 $body-color: #fff;
 $body-bg: #000;
+
 $link-color: #008000;
 $link-decoration: #ff0000 solid underline;
+
 $link-hover-color: #ff0000;
 $link-hover-decoration: #008000 solid underline;
 
