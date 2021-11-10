@@ -261,3 +261,10 @@ abbr:hover {
 		text-decoration: #008000 solid underline;
 }
 
+.listproperty1 {
+	list-style-type: disclosure-closed;
+}
+
+.listproperty2 {
+	margin-left: -12rem;
+}
