@@ -24,7 +24,7 @@
 			</div>
 			<div class="bd-content ps-lg-4">
 
-				<h2>1) Definições de Termos
+				<h2><span class="rsass">1)</span> Definições de Termos
 				</h2> <br/>
 
 				<div class="bd-callout bd-callout-danger">
@@ -50,18 +50,18 @@
 							</tr>
 							<tr>
 								<td class="tcoluna">Domain (Domínio)
-								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/ valor, segue-se que o recurso descrito é uma instância dessa classe.
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/valor, segue-se que o recurso descrito é uma instância dessa classe.
 							</tr>
 							<tr>
 								<td class="tcoluna">Literal
-								<td>O valor de uma propriedade de metadados que pode ser um hiperlink (URI) ou um valor de string (texto livre).
+								<td>O valor de uma propriedade de metadados que pode ser um hiperlink (<strong>URI</strong>) ou um valor de string (<strong>texto livre</strong>).
 							</tr>
 							<tr>
 								<td class="tcoluna">Metadata (Metadados)
-								<td>Informações estruturadas e processáveis ​​por máquina que descrevem e/ou permitem encontrar,gerenciar, controlar, compreender ou preservar outras informações ao longo do tempo. Pode ser compreendido como "dados sobre dados".
+								<td>Informações estruturadas e processáveis ​​por máquina que descrevem e/ou permitem encontrar, gerenciar, controlar, compreender ou preservar outras informações ao longo do tempo. Pode ser compreendido como <strong>"dados sobre dados"</strong>.
 							</tr>
 							<tr>
-								<td class="tcoluna">Namesoace
+								<td class="tcoluna">Namespace
 								<td>Um namespace é um agrupamento lógico de propriedades. Ele define as regras para que as propriedades pertençam ao grupo.
 							</tr>
 							<tr>
@@ -70,11 +70,11 @@
 							</tr>
 							<tr>
 								<td class="tcoluna">Sub-property (Subpropriedade)
-								<td>A instância específica de uma propriedade que o esclarece o significado da propriedade.
+								<td>A instância específica de uma propriedade, que esclarece o significado da propriedade.
 							</tr>
 							<tr>
 								<td class="tcoluna">Range (Alcance)
-								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de umpar propriedade / valor, segue-se que o valor é uma instância dessa classe.
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/valor, segue-se que o valor é uma instância dessa classe.
 							</tr>
 							<tr>
 								<td class="tcoluna">Resource (Recurso)
@@ -106,10 +106,10 @@
 					</table>
 				</div> <br/>
 
-				<h2>2) Categorias de Obrigação
+				<h2><span class="rsass">2)</span> Categorias de Obrigação
 				</h2> <br/>
 
-				<p>No Agls são 4 categorias:
+				<p>No AglsTerms/DCTerms são 4 categorias: (Todas as propriedades dos outros namespaces dessa documentação são opcionais)
 				</p> <br/>
 				<div class="bd-callout bd-callout-danger">
 					<table class="table table-responsive">
@@ -134,14 +134,14 @@
 							</tr>
 							<tr>
 								<td class="tcoluna">Opcional
-								<td>essas propriedades são verdadeiramente opcionais
+								<td>Essas propriedades são verdadeiramente opcionais
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> <br/>
 
-				<h3>2.1) Distribuição das Propriedades por Categorias
-				</h3>
+				<h3><span class="rsass">2.1)</span> Distribuição das Propriedades por Categorias <span class="rsass">(AGLSTerms/DCTerms)</span>
+				</h3> <br/>
 
 				<div class="bd-callout bd-callout-danger">
 					<table class="table table-responsive">
@@ -214,7 +214,62 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> <br/>
+
+				<h2><span class="rsass">3)</span> Namespace
+				</h2> <br/>
+
+				<p>Um namespace é um arquivo legível por máquina que fornece definições do esquema de metadados. Ao ler o termo que foi especificado a máquina irá questionar de onde veio aquele dado (a resposta é o namespace).
+				</p>
+				<p>Identificar o namespace de um termo de metadados é necessário para que esse metadado seja processado corretamente.
+				</p>
+				<p>O namespace é espeficificado por um prefixo antes das propriedades e também pelo elemento <code class="helement">&lt;link&gt;</code> dentro do elemento <code class="helement">&lt;head&gt;</code>.
+				</p>
+				<p>A declarações dos namespaces no elemento <code class="helement">&lt;link&gt;</code> podem ser das seguintes maneiras:
+				</p>
+					<ul>
+						<li>
+							<p><strong>Para DCTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DCTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/terms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AGLSTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLSTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/terms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+							<p><strong>Para AgentTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGENTTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/agentterms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AvailTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AVAILTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/AVAILTERMS/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AdminTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.ADMINTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/adminterms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para Legacy DCTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DC"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/elements/1.1/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para Legacy AGLSTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/1.2/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+					</ul>
 
 
 
