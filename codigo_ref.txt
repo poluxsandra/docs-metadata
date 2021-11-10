@@ -1,0 +1,94 @@
+Referências
+Classes HTML:         rclass
+Elementos HTML:       relement
+Propriedade CSS:      rprop
+Valor da Propriedade: rvalorprop
+Atributos:            ratrib
+Valor de Atributos:   rvaloratrib
+Termos Sass:          rsass
+Símbolos:              rsymb
+Declaração:           rdecla
+Recursos CSS:         rcss
+Termos JS:            rjs
+Ids HTML:             rid
+
+#########################################################################
+HTML
+
+Atributos:            ratrib
+Valor de Atributos:   rvaloratrib
+Símbolos:              rsymb
+Nome de Tag:          helement
+<></>:                htag
+
+########################################################################
+CSS
+
+Elementos HTML:       relement
+Classes HTML:         rclass
+Ids HTML:             rid
+Propriedade CSS:      rprop
+Valor da Propriedade: rvalorprop
+Símbolos:              rsymb
+Reservadas:               creser
+Pseudos:              cpseudo
+
+########################################################################
+JS
+
+Símbolos:              rsymb
+Termos Sass:          rsass
+Termos CSS:           rcss
+Termos HTML:          jhtml
+Reservadas:           jreser
+Variável:             jvar
+String:               jstring
+Número/Booleano:      jnumboo
+[]:                   jarr
+{}:                   jobj
+Propriedade:          jprop
+Valor:                jvalor
+Método:               jmetodo
+Nome Função:          jfunc
+Parametro:            jpara
+i(loop):              jloop
+
+#######################################################################
+Sass
+
+Elementos HTML:       relement
+Classes HTML:         rclass
+Ids HTML:             rid
+Propriedade CSS:      rprop
+Valor da Propriedade: rvalorprop
+Símbolos:              rsymb
+Função:               creser
+Pseudos:              cpseudo
+Símbolos:              rsymb
+Termos Sass:          rsass
+Termos CSS:           rcss
+Termos HTML:          jhtml
+Reservadas:           jreser
+Variável:             jvar
+String:               jstring
+Número/Booleano:      jnumboo
+[]:                   jarr
+{}:                   jobj
+Propriedade:          jprop
+Valor:                jvalor
+Método:               jmetodo
+Nome Função:          jfunc
+Parametro:            jpara
+i(loop):              jloop
+Reservadas:           sreser
+
+######################################################################
+Terminal
+
+Shell:               tshell
+Comando:             tcommand
+Parâmetro:           tpar
+Flag:                tflag
+Valor:               text-light
+Destaque:            tdest
+
