@@ -246,3 +246,25 @@ abbr {
 		font-size: calc(1.25 * 2rem);
 	}
 }
+
+abbr {
+	color: #008000;
+	cursor: progress;
+	-webkit-text-decoration: #ff0000 solid underline;
+		text-decoration: #ff0000 solid underline;
+}
+
+abbr:hover {
+	color: #ff0000;
+	cursor: progress;
+	-webkit-text-decoration: #008000 solid underline;
+		text-decoration: #008000 solid underline;
+}
+
+.listproperty1 {
+	list-style-type: disclosure-closed;
+}
+
+.listproperty2 {
+	margin-left: -12rem;
+}

@@ -19,10 +19,260 @@
 					<h1 class="bd-title" id="content">Introdução
 					</h1>
 				</div>
-				<p class="bd-lead">Paragrafo importante
+				<p class="bd-lead">Metadados de descoberta de recursos são informações em um formato estruturado que descreve um recurso ou uma coleção de recursos. Um registro de metadados consiste em um conjunto de propriedades que descrevem um recurso.
 				</p>
 			</div>
 			<div class="bd-content ps-lg-4">
+
+				<h2><span class="rsass">1)</span> Definições de Termos
+				</h2> <br/>
+
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Nome
+								<th>Definição
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna">Class (Classe)
+								<td>Um grupo contendo membros que possuem atributos, comportamentos, relacionamentos ou semânticas em comum; é uma espécie de categoria.
+							</tr>
+							<tr>
+								<td class="tcoluna"> DCMI
+								<td><a href="http://dublincore.org" target="_blank">Dublin Core Metadata Initiative</a>, a agência de manutenção do Dublin Core.
+							</tr>
+							<tr>
+								<td class="tcoluna">Modelo Abstrato DCMI
+								<td>Um conjunto de componentes e construções usadas nos metadados Dublin Core, fornecendo uma informação modelo independente de qualquer sintaxe de codificação.
+							</tr>
+							<tr>
+								<td class="tcoluna">Domain (Domínio)
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/valor, segue-se que o recurso descrito é uma instância dessa classe.
+							</tr>
+							<tr>
+								<td class="tcoluna">Literal
+								<td>O valor de uma propriedade de metadados que pode ser um hiperlink (<strong>URI</strong>) ou um valor de string (<strong>texto livre</strong>).
+							</tr>
+							<tr>
+								<td class="tcoluna">Metadata (Metadados)
+								<td>Informações estruturadas e processáveis ​​por máquina que descrevem e/ou permitem encontrar, gerenciar, controlar, compreender ou preservar outras informações ao longo do tempo. Pode ser compreendido como <strong>"dados sobre dados"</strong>.
+							</tr>
+							<tr>
+								<td class="tcoluna">Namespace
+								<td>Um namespace é um agrupamento lógico de propriedades. Ele define as regras para que as propriedades pertençam ao grupo.
+							</tr>
+							<tr>
+								<td class="tcoluna">Property (Propriedade)
+								<td>Um aspecto, característica, atributo ou relação específica usado para descrever um recurso. Dublin Core e os termos de metadados AGLS são propriedades.
+							</tr>
+							<tr>
+								<td class="tcoluna">Sub-property (Subpropriedade)
+								<td>A instância específica de uma propriedade, que esclarece o significado da propriedade.
+							</tr>
+							<tr>
+								<td class="tcoluna">Range (Alcance)
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/valor, segue-se que o valor é uma instância dessa classe.
+							</tr>
+							<tr>
+								<td class="tcoluna">Resource (Recurso)
+								<td>
+									<p>Qualquer coisa que tenha uma identidade.
+									</p>
+									<p>Os exemplos incluem um documento eletrônico (pdf, html, docx), uma imagem, um serviço e uma coleção de outros recursos.
+									</p>
+									<p>Nem todos os recursos podem ser recuperados pela web. Humanos, corporações, objetos físicos e documentos eletrônicos em pendrives também são recursos.
+									</p>
+							</tr>
+							<tr>
+								<td class="tcoluna">Service (Serviço)
+								<td>Um serviço existe onde há um relacionamento estabelecido entre uma <abbr title="Uma função de negócio é uma área em que a organização coloca esforços para atingir seus objetivos e metas. Uma função de negócio agrupa comportamento e recursos internos com base em algum critério significativo (por exemplo, localização geográfica, departamento, competências requeridas, recursos e conhecimento compartilhado, etc.). Uma função de negócio representa parte do valor adicionado por uma organização. Funções de negócio, geralmente, conectam O QUE a organização faz com QUEM o faz, sem indicar COMO são feitas">função de negócios</abbr> de uma organização e as necessidades identificadas de um cliente individual ou de um grupo de clientes.
+							</tr>
+							<tr>
+								<td class="tcoluna">Syntax Encoding Scheme (Esquema de Codificação de Sintaxe)
+								<td>Indica que o valor é uma string formatada de acordo com uma notação formal ou padrão definido externamente. (Portanto tem relação com a <strong>forma</strong> do recurso)
+							</tr>
+							<tr>
+								<td class="tcoluna">Vocabulary Encoding Scheme (Esquema de Codificação de Vocabulário)
+								<td>Indica que o valor é um termo de um um conjunto, finito e predefinido por convenção, de palavras. (Portanto tem relação com o <strong>sentido</strong> do recurso)
+							</tr>
+							<tr>
+								<td class="tcoluna">Value (Valor)
+								<td>O conteúdo de uma propriedade de metadados que fornece informações sobre uma característica de um recurso.
+							</tr>
+						</tbody>
+					</table>
+				</div> <br/>
+
+				<h2><span class="rsass">2)</span> Categorias de Obrigação
+				</h2> <br/>
+
+				<p>No AglsTerms/DCTerms são 4 categorias: (Todas as propriedades dos outros namespaces dessa documentação são opcionais)
+				</p> <br/>
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Categoria
+								<th>Definição
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna">Obrigatório
+								<td>Essas propriedades devem estar presentes em todos os registros de metadados.
+							</tr>
+							<tr>
+								<td class="tcoluna">Condicional
+								<td>Essas propriedades devem estar presentes em determinadas circunstâncias.
+							</tr>
+							<tr>
+								<td class="tcoluna">Recomendado
+								<td>Pode haver razões válidas em circunstâncias específicas para não incluir essas propriedades, mas todas as implicações devem ser compreendidas e cuidadosamente avaliadas.
+							</tr>
+							<tr>
+								<td class="tcoluna">Opcional
+								<td>Essas propriedades são verdadeiramente opcionais
+							</tr>
+						</tbody>
+					</table>
+				</div> <br/>
+
+				<h3><span class="rsass">2.1)</span> Distribuição das Propriedades por Categorias <span class="rsass">(AGLSTerms/DCTerms)</span>
+				</h3> <br/>
+
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Categoria
+								<th>Propriedades
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna" rowspan="2">Obrigatórias
+								<td class="tcelesp">
+									<ul>
+										<li>creator
+										<li>title
+										<li>date<sup>*</sup>
+									</ul>
+							</tr>
+							<tr>
+								<td>* Ela pode ser substituída pelas seguintes propriedades:
+								<td class="tcelesp">
+									<ul>
+										<li>available
+										<li>created
+										<li>dateCopyrighted
+										<li>dateLicensed
+										<li>issued
+										<li>modified
+										<li>valid
+									</ul>
+							</tr>
+							<tr>
+								<td class="tcoluna">Condicionais
+								<td class="tcelesp">
+									<ul>
+										<li>availability
+										<li>identifier
+										<li>publisher
+									</ul>
+								<td>
+									<ul class="listproperty2">
+										<li class="listproperty1">Obrigatório para Recursos Offline
+										<li class="listproperty1">Obrigatório para Recursos Online
+										<li class="listproperty1">Obrigatório para Recursos de Informação
+									</ul>
+							</tr>
+							<tr>
+								<td class="tcoluna">Recomendadas
+								<td class="tcelesp">
+									<ul>
+										<li>description
+										<li>function
+										<li>language
+										<li>subject
+										<li>type
+									</ul>
+								<td>
+									<ul class="listproperty2">
+										<li class="lisummary">...
+										<li class="listproperty1">Se a propriedade <span class="tcoluna">subject</span> não foi usada
+										<li class="listproperty1">Quando a língua não for a Inglês
+										<li class="listproperty1"> Se a propriedade <span class="tcoluna">function</span> não foi usada
+										<li class="lisummary">...
+									</ul>
+							</tr>
+							<tr>
+								<td class="tcoluna">Opcionais
+								<td>Todas as outras propriedades
+							</tr>
+						</tbody>
+					</table>
+				</div> <br/>
+
+				<h2><span class="rsass">3)</span> Namespace
+				</h2> <br/>
+
+				<p>Um namespace é um arquivo legível por máquina que fornece definições do esquema de metadados. Ao ler o termo que foi especificado a máquina irá questionar de onde veio aquele dado (a resposta é o namespace).
+				</p>
+				<p>Identificar o namespace de um termo de metadados é necessário para que esse metadado seja processado corretamente.
+				</p>
+				<p>O namespace é espeficificado por um prefixo antes das propriedades e também pelo elemento <code class="helement">&lt;link&gt;</code> dentro do elemento <code class="helement">&lt;head&gt;</code>.
+				</p>
+				<p>A declarações dos namespaces no elemento <code class="helement">&lt;link&gt;</code> podem ser das seguintes maneiras:
+				</p>
+					<ul>
+						<li>
+							<p><strong>Para DCTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DCTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/terms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AGLSTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLSTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/terms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+							<p><strong>Para AgentTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGENTTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/agentterms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AvailTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AVAILTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/AVAILTERMS/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para AdminTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.ADMINTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/adminterms/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para Legacy DCTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DC"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/elements/1.1/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+						<li>
+							<p><strong>Para Legacy AGLSTerms:</strong>
+							</p>
+							<div class="bd-callout bd-callout-warning"><pre><code>
+<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/1.2/"</span><span class="htag">&gt;</span></code></pre>
+							</div>
+					</ul>
+
+
+
 
 
 			</div>
