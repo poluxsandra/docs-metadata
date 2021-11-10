@@ -19,10 +19,174 @@
 					<h1 class="bd-title" id="content">Introdução
 					</h1>
 				</div>
-				<p class="bd-lead">Paragrafo importante
+				<p class="bd-lead">Metadados de descoberta de recursos são informações em um formato estruturado que descreve um recurso ou uma coleção de recursos. Um registro de metadados consiste em um conjunto de propriedades que descrevem um recurso.
 				</p>
 			</div>
 			<div class="bd-content ps-lg-4">
+
+				<h2>1) Definições de Termos
+				</h2> <br/>
+
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Nome
+								<th>Definição
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna">Class (Classe)
+								<td>Um grupo contendo membros que possuem atributos, comportamentos, relacionamentos ou semânticas em comum; é uma espécie de categoria.
+							</tr>
+							<tr>
+								<td class="tcoluna"> DCMI
+								<td><a href="http://dublincore.org" target="_blank">Dublin Core Metadata Initiative</a>, a agência de manutenção do Dublin Core.
+							</tr>
+							<tr>
+								<td class="tcoluna">Modelo Abstrato DCMI
+								<td>Um conjunto de componentes e construções usadas nos metadados Dublin Core, fornecendo uma informação modelo independente de qualquer sintaxe de codificação.
+							</tr>
+							<tr>
+								<td class="tcoluna">Domain (Domínio)
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de um par propriedade/ valor, segue-se que o recurso descrito é uma instância dessa classe.
+							</tr>
+							<tr>
+								<td class="tcoluna">Literal
+								<td>O valor de uma propriedade de metadados que pode ser um hiperlink (URI) ou um valor de string (texto livre).
+							</tr>
+							<tr>
+								<td class="tcoluna">Metadata (Metadados)
+								<td>Informações estruturadas e processáveis ​​por máquina que descrevem e/ou permitem encontrar,gerenciar, controlar, compreender ou preservar outras informações ao longo do tempo.
+							</tr>
+							<tr>
+								<td class="tcoluna">Property (Propriedade)
+								<td>Um aspecto, característica, atributo ou relação específica usado para descrever um recurso. Dublin Core e os termos de metadados AGLS são propriedades.
+							</tr>
+							<tr>
+								<td class="tcoluna">Range (Alcance)
+								<td>Uma relação entre uma propriedade e uma classe que indica que se a propriedade faz parte de umpar propriedade / valor, segue-se que o valor é uma instância dessa classe.
+							</tr>
+							<tr>
+								<td class="tcoluna">Resource (Recurso)
+								<td>
+									<p>Qualquer coisa que tenha uma identidade.
+									</p>
+									<p>Os exemplos incluem um documento eletrônico (pdf, html, docx), uma imagem, um serviço e uma coleção de outros recursos.
+									</p>
+									<p>Nem todos os recursos podem ser recuperados pela web. Humanos, corporações, objetos físicos e documentos eletrônicos em pendrives também são recursos.
+									</p>
+							</tr>
+							<tr>
+								<td class="tcoluna">Service (Serviço)
+								<td>Um serviço existe onde há um relacionamento estabelecido entre uma <abbr title="Uma função de negócio é uma área em que a organização coloca esforços para atingir seus objetivos e metas. Uma função de negócio agrupa comportamento e recursos internos com base em algum critério significativo (por exemplo, localização geográfica, departamento, competências requeridas, recursos e conhecimento compartilhado, etc.). Uma função de negócio representa parte do valor adicionado por uma organização. Funções de negócio, geralmente, conectam O QUE a organização faz com QUEM o faz, sem indicar COMO são feitas">função de negócios</abbr> de umorganização e as necessidades identificadas de um cliente individual ou de um grupo de clientes
+							</tr>
+							<tr>
+								<td class="tcoluna">Syntax Encoding Scheme (Esquema de Codificação de Sintaxe)
+								<td>Indica que o valor é uma string formatada de acordo com uma notação formal ou padrão definido externamente. (Portanto tem relação com a <strong>forma</strong> do recurso)
+							</tr>
+							<tr>
+								<td class="tcoluna">Vocabulary Encoding Scheme (Esquema de Codificação de Vocabulário)
+								<td>Indica que o valor é um termo de um vocabulário controlado. (Portanto tem relação com o <strong>sentido</strong> do recurso)
+							</tr>
+							<tr>
+								<td class="tcoluna">Value (Valor)
+								<td>O conteúdo de uma propriedade de metadados que fornece informações sobre uma característica de um recurso.
+							</tr>
+						</tbody>
+					</table>
+				</div> <br/>
+
+				<h2>2) Categorias de Obrigação
+				</h2> <br/>
+
+				<p>No Agls são 4 categorias:
+				</p> <br/>
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Categoria
+								<th>Definição
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna">Obrigatório
+								<td>Essas propriedades devem estar presentes em todos os registros de metadados.
+							</tr>
+							<tr>
+								<td class="tcoluna">Condicional
+								<td>Essas propriedades devem estar presentes em determinadas circunstâncias.
+							</tr>
+							<tr>
+								<td class="tcoluna">Recomendado
+								<td>Pode haver razões válidas em circunstâncias específicas para não incluir essas propriedades, mas todas as implicações devem ser compreendidas e cuidadosamente avaliadas.
+							</tr>
+							<tr>
+								<td class="tcoluna">Opcional
+								<td>essas propriedades são verdadeiramente opcionais
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<h3>2.1) Distribuição das Propriedades por Categorias
+				</h3>
+
+				<div class="bd-callout bd-callout-danger">
+					<table class="table table-responsive">
+						<thead class="tableatrib text-success">
+							<tr>
+								<th>Categoria
+								<th>Propriedades
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tcoluna" rowspan="2">Obrigatórias
+								<td>
+									<ul>
+										<li>creator
+										<li>title
+										<li>date<sup>*</sup>
+									</ul>
+							</tr>
+							<tr>
+								<td>* Ela pode ser substituída pelas seguintes propriedades:
+								<td>
+									<ul>
+										<li>available
+										<li>created
+										<li>dateCopyrighted
+										<li>dateLicensed
+										<li>issued
+										<li>modified
+										<li>valid
+									</ul>
+							</tr>
+							<tr>
+								<td class="tcoluna">Condicionais
+								<td>
+									<ul>
+										<li>availability
+										<li>identifier
+										<li>publisher
+									</ul>
+								<td>
+									<ul class="lisproperty2">
+										<li class="listproperty1">availability
+										<li class="listproperty1">identifier
+										<li class="listproperty1">publisher
+									</ul>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+
 
 
 			</div>
