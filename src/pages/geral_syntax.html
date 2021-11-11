@@ -24,88 +24,84 @@
 			</div>
 			<div class="bd-content ps-lg-4">
 
-			<h2 id="namespace">Namespace
-			</h2>
-			<p>Um namespace é um arquivo legível por máquina que fornece definições do esquema de metadados. Identificar o namespace de um termo de metadados é necessário para que os metadados sejam processáveis.
-			</p>
-			<p>Os prefixos de namespace são usados ​​nos nomes das propriedades para indicar o agrupamento lógico e a identificação única de um conjunto de termos de metadados dos quais a propriedade é tomadas:
-				<ul>
-					<li>DCTERMS para Dublin Core
-					<li>AGLSTERMS para AGLS
-				</ul>
-			</p>
+			<h2 id="namespace"><span class="rsass">1)</span> Namespace
+			</h2> <br/>
+
 			<p>As identidades dos namespaces, usando o elemento <code class="helement">&lt;link&gt;</code>, têm o seguinte padrão:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.PREFIX"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"namespaceURI"</span><span class="htag">&gt;</span></code></pre>
-			</div>
-			<p>A codificação do namespace para as versões atuais do Dublin Core e AGLS são:
-			</p>
-			<div class="bd-callout bd-callout-warning"><pre><code>
-<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DCTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/terms/"</span><span class="htag">&gt;</span>
+			</div> <br/>
 
-<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLSTERMS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/terms/"</span><span class="htag">&gt;</span></code></pre>
-			</div>
-			<p>Implementações de legado usando elementos DC e AGLS devem fazer referência ao legado namespaces:
-			</p>
-			<div class="bd-callout bd-callout-warning"><pre><code>
-<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.DC"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://purl.org/dc/elements/1.1/"</span><span class="htag">&gt;</span>
+			<h2 id="propriedades"><span class="rsass">2) </span>Propriedades
+			</h2> <br/>
 
-<span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.AGLS"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.agls.gov.au/agls/1.2/"</span><span class="htag">&gt;</span></code></pre>
-			</div>
-
-			<h2 id="propriedades">Propriedades
-			</h2>
 			<p>As propriedades são codificadas usando os atributos de nome e conteúdo do elemento <code class="helement">&lt;meta&gt;</code>.
 			</p>
 			<p>Usar os seguintes formulários são recomendados:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
 
-<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span></code></pre>
-			</div>
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
+
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGENTTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
+
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AVAILTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
+
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"ADMINTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
+
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DC.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
+
+<span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span></code></pre>
+			</div> <br/>
 			<p>Por exemplo:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.date"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"2007-07-18"</span><span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.function"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Educação escolar"</span><span class="htag">&gt;</span></code></pre>
-			</div>
-			<p>Os caracteres especiais no <code class="rvaloratrib">"valor"</code> do atributo <code class="ratrib">content</code> podem ser codificados como uma referência de entidade de caractere HTML. Para exemplo, uma letra e acentuada:
-			</p>
+			</div> <br/>
+			<p>Os caracteres especiais no <code class="rvaloratrib">"valor"</code> do atributo <code class="ratrib">//content//</code> podem ser codificados como uma referência de entidade de caractere HTML. Para exemplo, uma letra e acentuada:
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.creator"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Da Costa, Jos&eacute;"</span>[& eacute;]<span class="htag">&gt;</span></code></pre>
-			</div>
-			<h2 id="encondingschemes">Encoding schemes
-			</h2>
+			</div> <br/>
+
+			<h2 id="encondingschemes"><span class="rsass">3)</span> Encoding schemes
+			</h2> <br/>
+
 			<p>Quando um esquema é especificado, o namespace do Vocabulary Encoding Scheme ou Syntax Encoding Scheme também deve ser especificado, por exemplo, <code class="rvaloratrib">"DCTERMS.URI"</code> ou <code class="rvaloratrib">"AGLSTERMS.AGIFT"</code>.
 			</p>
 			<p>O valor deve ser codificado no conteúdo de acordo com esse esquema, incluindo o uso de quaisquer caracteres de pontuação. Use os seguintes formulários:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.property"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.Scheme"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.property"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.Scheme"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span></code></pre>
-			</div>
+			</div> <br/>
 			<p>Por exemplo:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.date"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.ISO8601"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"2007-07-18"</span><span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.audience"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.agls-audience"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"pessoas com defici&ecirc;ncia"</span>[& ecirc;]<span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.function"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.AGIFT"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Escola de Educa&ccedil;&atilde;o"</span>[& ccedil;][& atilde;]<span class="htag">&gt;</span></code></pre>
-			</div>
-			<h2 id="idioma">Idioma do Valor
-			</h2>
+			</div> <br/>
+
+			<h2 id="idioma"><span class="rsass">4)</span> Idioma do Valor
+			</h2> <br/>
+
 			<p>Também é recomendável especificar o idioma dos valores quando estes forem livres para o desenvolvedor. Por exemplo:
-			</p>
+			</p> <br/>
 			<div class="bd-callout bd-callout-warning"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.title"</span> <span class="ratrib">lang</span><span class="rsymb">=</span><span class="rvaloratrib">"pt-BR"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Diret&oacute;rio de organiza&ccedil;&otilde;es"</span>[& oacute;][& ccedil;][& otilde;]<span class="htag">&gt;</span></code></pre>
-			</div>
-			<h2>Exemplo
+			</div> <br>
+
+			<h2><span class="rsass">5)</span> Exemplo
 			</h2>
+
 			<p>Esta é uma página de exemplo: (contém mais do que o número mínimo de propriedades necessárias)
 			</p>
 			<div class="bd-callout bd-callout-warning"><pre><code>
@@ -121,7 +117,7 @@
 <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"corporateName = National Archives of Australia; address = Queen
 Victoria Terrace, Parkes, ACT; contact = + 61 2 6212 3600"</span><span class="htag">&gt;</span>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.publisher"</span> <span class="ratrib">scheme</span> <span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.AglsAgent"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"
-corporateName = Arquivos Nacionais da Austrália; address = Queen
+corporateName = National Archives of Australia; address = Queen
 Victoria Terrace, Parkes, ACT; contact = + 61 2 6212 3600"</span><span class="htag">&gt;</span>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.rights"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.URI"</span>
 <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"http://www.naa.gov.au/info/copyright.aspx"</span><span class="htag">&gt;</span>
@@ -153,3 +149,5 @@ Victoria Terrace, Parkes, ACT; contact = + 61 2 6212 3600"</span><span class="ht
 
 </body>
 </html>
+
+<!-- adicionar ids e linkar das pages syntax e intro -->
