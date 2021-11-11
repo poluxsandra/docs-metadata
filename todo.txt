@@ -1,0 +1,62 @@
+//varios
+					<div class=bd-callout-danger>
+						<table class="table table-responsive">
+							<thead class="tableatrib">
+								<tr>
+									<th class="rclass">Sintaxe
+									<th class="text-secondary"><strong></strong>
+								</tr>
+							<tbody>
+								<tr>
+									<td class="tcoluna">Definição
+									<td>
+								</tr>
+								<tr>
+									<td class="tcoluna">Exigência
+									<td class="tcelesp">
+								</tr>
+								<tr>
+									<td class="tcoluna">Schemes
+									<td>
+										<ul>
+											<li><a class="link-primary" href="" targe="_blank"></a>
+											<li><a class="link-primary" href="" targe="_blank"></a>
+										</ul> 
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+
+
+						<table class="table table-responsive">
+							<thead class="tableatrib">
+								<tr>
+									<th class="rclass">Sintaxe
+									<th class="text-secondary"><strong></strong>
+								</tr>
+							<tbody>
+								<tr>
+									<td class="tcoluna">Definição
+									<td>
+								</tr>
+								<tr>
+									<td class="tcoluna">Exigência
+									<td class="tcelesp">
+								</tr>
+								<tr>
+									<td class="tcoluna">Schemes
+									<td>
+										<ul>
+											<li><a class="link-primary" href="" targe="_blank"></a>
+											<li><a class="link-primary" href="" targe="_blank"></a>
+										</ul> 
+								</tr>
+								<tr>
+									<td class="tcoluna">Valores Enumerados
+									<td>
+								</tr>
+									<td class="tcoluna">Valor Padrão
+							</tbody>
+						</table>
+					</div>
