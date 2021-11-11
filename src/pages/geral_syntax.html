@@ -29,18 +29,18 @@
 
 			<p>As identidades dos namespaces, usando o elemento <code class="helement">&lt;link&gt;</code>, têm o seguinte padrão:
 			</p> <br/>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="patternNamespace"><pre><code>
 <span class="htag">&lt;</span><span class="helement">link</span> <span class="ratrib">rel</span><span class="rsymb">=</span><span class="rvaloratrib">"schema.PREFIX"</span> <span class="ratrib">href</span><span class="rsymb">=</span><span class="rvaloratrib">"namespaceURI"</span><span class="htag">&gt;</span></code></pre>
 			</div> <br/>
 
-			<h2 id="propriedades"><span class="rsass">2) </span>Propriedades
+			<h2 id="propertys"><span class="rsass">2) </span>Propriedades
 			</h2> <br/>
 
 			<p>As propriedades são codificadas usando os atributos de nome e conteúdo do elemento <code class="helement">&lt;meta&gt;</code>.
 			</p>
 			<p>Usar os seguintes formulários são recomendados:
 			</p> <br/>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="formProperty"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.property"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"valor"</span><span class="htag">&gt;</span>
@@ -57,14 +57,14 @@
 			</div> <br/>
 			<p>Por exemplo:
 			</p> <br/>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="exampleProperty"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.date"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"2007-07-18"</span><span class="htag">&gt;</span>
 
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.function"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Educação escolar"</span><span class="htag">&gt;</span></code></pre>
 			</div> <br/>
 			<p>Os caracteres especiais no <code class="rvaloratrib">"valor"</code> do atributo <code class="ratrib">//content//</code> podem ser codificados como uma referência de entidade de caractere HTML. Para exemplo, uma letra e acentuada:
 			</p> <br/>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="examplePropertySpecial"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.creator"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Da Costa, Jos&eacute;"</span>[& eacute;]<span class="htag">&gt;</span></code></pre>
 			</div> <br/>
 
@@ -90,21 +90,21 @@
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.function"</span> <span class="ratrib">scheme</span><span class="rsymb">=</span><span class="rvaloratrib">"AGLSTERMS.AGIFT"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Escola de Educa&ccedil;&atilde;o"</span>[& ccedil;][& atilde;]<span class="htag">&gt;</span></code></pre>
 			</div> <br/>
 
-			<h2 id="idioma"><span class="rsass">4)</span> Idioma do Valor
+			<h2 id="language"><span class="rsass">4)</span> Idioma do Valor
 			</h2> <br/>
 
 			<p>Também é recomendável especificar o idioma dos valores quando estes forem livres para o desenvolvedor. Por exemplo:
 			</p> <br/>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="languageExample"><pre><code>
 <span class="htag">&lt;</span><span class="helement">meta</span> <span class="ratrib">name</span><span class="rsymb">=</span><span class="rvaloratrib">"DCTERMS.title"</span> <span class="ratrib">lang</span><span class="rsymb">=</span><span class="rvaloratrib">"pt-BR"</span> <span class="ratrib">content</span><span class="rsymb">=</span><span class="rvaloratrib">"Diret&oacute;rio de organiza&ccedil;&otilde;es"</span>[& oacute;][& ccedil;][& otilde;]<span class="htag">&gt;</span></code></pre>
 			</div> <br>
 
-			<h2><span class="rsass">5)</span> Exemplo
+			<h2><span class="rsass" id="example">5)</span> Exemplo
 			</h2>
 
 			<p>Esta é uma página de exemplo: (contém mais do que o número mínimo de propriedades necessárias)
 			</p>
-			<div class="bd-callout bd-callout-warning"><pre><code>
+			<div class="bd-callout bd-callout-warning" id="examplePage"><pre><code>
 <span class="htag">&lt;</span><span class="rdecla">!DOCTYPE</span> <span class="helement">html</span><span class="htag">&gt;</span>
 <span class="htag">&lt;</span><span class="helement">html</span><span class="htag">&gt;</span>
 <span class="htag">&lt;</span><span class="helement">head</span><span class="htag">&gt;</span>
@@ -150,4 +150,3 @@ Victoria Terrace, Parkes, ACT; contact = + 61 2 6212 3600"</span><span class="ht
 </body>
 </html>
 
-<!-- adicionar ids e linkar das pages syntax e intro -->
